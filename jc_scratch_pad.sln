@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jc_scratch_pad", "jc_scratch_pad\jc_scratch_pad.csproj", "{4D6898F1-D29A-4F55-B1EB-F88C5B46DABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jc_scratch_web", "jc_scratch_web\jc_scratch_web.csproj", "{43855DC1-EBD2-4CE4-AEFB-654710E1F77A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D6898F1-D29A-4F55-B1EB-F88C5B46DABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D6898F1-D29A-4F55-B1EB-F88C5B46DABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D6898F1-D29A-4F55-B1EB-F88C5B46DABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D6898F1-D29A-4F55-B1EB-F88C5B46DABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43855DC1-EBD2-4CE4-AEFB-654710E1F77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43855DC1-EBD2-4CE4-AEFB-654710E1F77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43855DC1-EBD2-4CE4-AEFB-654710E1F77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43855DC1-EBD2-4CE4-AEFB-654710E1F77A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17ED76BD-C027-4F9A-B178-002ABA22DB49}
+	EndGlobalSection
+EndGlobal

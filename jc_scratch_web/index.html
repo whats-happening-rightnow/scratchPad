@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title></title>
+</head>
+<body>
+
+    <script>
+        $(function () {
+
+            console.log('durr');
+            var $data;
+            $.get('bwb.txt', function (data) {
+                $data = $(data).find('.release-card.scene');
+                console.log($data.length);
+
+                //for (var i = 0; i < $data.length; i++) {
+                for (var i = 0; i < $data.length; i++) {
+                    var $scene = $($data[i]);
+                    var scnid = $scene.find('.scene-card-button').attr('href').split('/')[4];
+                    var title = $scene.find('.scene-card-info').find('a').html().trim();
+                    var dt = $scene.find('.scene-postcard-date').html().trim();
+                    var desc = $scene.find('.scene-postcard-description').html().trim();
+                    var girl = $.map($scene.find('.model-names').find('a'), (val, i) => {
+                        return $(val).html().trim();
+                    }).join(', ');
+
+                    var outLine = `${scnid}|${girl}|${title}|${dt}|${desc}<br />`;
+                    $('body').append(outLine);
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>
